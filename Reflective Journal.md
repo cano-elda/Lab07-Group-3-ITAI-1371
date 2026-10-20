@@ -16,3 +16,10 @@ Looking at the numbers for Class 0 (Non-Survivors), we have a Precision of 0.82,
 The F1-score provides a useful average between precision and recall for a classification model. The support of the classification report shows the number of actual samples in each class. The samples for Class 0 in the test data used for this lab consisted of 105 passengers, while for Class 1, 74. There were therefore not equal numbers of the two classes in the test data.
 
 One limitation of the model in this case is that the overall accuracy does not reveal the specific misclassifications of individual passengers. I will look to the confusion matrix for further information on the incorrectly classified passengers, and investigate the performance of other classification models in order to try to improve their recall and F1-scores. I would also like to further investigate the effect that the chosen features have on the model’s predictions.
+
+
+Michelle's Entry
+
+In this lab I learned that accuracy alone isn’t enough to judge a model. The confusion matrix shows where the model is right and wrong, and precision and recall help you decide which mistakes matter more.
+From my part, I learned that one train-test split can be misleading. Our split gave 80%, but cross-validation gave 78.68%, so the first score was a bit lucky. Testing on different folds and averaging gives a more honest score.
+I also learned to always run the code and check the output before trusting it. 
